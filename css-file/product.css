@@ -1,0 +1,1136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #f5f7fa;
+    color: var(--dark);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #3A7CA5;
+    /* position: fixed; */
+    z-index: 99;
+    padding: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    color: #fff;
+    z-index: 9;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #20c997 !important;
+    /* Teal-green: modern & health-friendly */
+}
+.navbar-brand img{
+    width: 70px;
+    /* Teal-green: modern & health-friendly */
+}
+
+#mainNavbar {
+    margin-left: 8rem;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0.6rem 1rem;
+    color: #e6e2e2;
+    margin-left: 1rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: blue !important;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f8f5;
+    color: #20c997;
+}
+
+.btn-outline-primary {
+    border-color: #ffffff;
+    padding: 0.56rem 2rem;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.btn-primary {
+    background-color: #000000;
+    border-color: #20c997;
+    padding: 0.56rem 2rem;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    box-shadow: inset 242px 0 0 white;
+    transition: 3s;
+    color: #000000;
+}
+
+
+/* hero section */
+.hero {
+    background-image: url(/assets/img/portrait-female-pharmacist-working-drugstore.jpg);
+    background-repeat: no-repeat;
+    position: sticky;
+    background-size: cover;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.hero-2 {
+    margin-top: 10em;
+    width: 90%;
+    margin: auto;
+    height: auto;
+}
+
+.hero-2 h3 {
+    color: rgb(86, 86, 248);
+    font-size: 25px;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0.5em;
+}
+
+.hero-2 h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    color: rgb(0, 0, 0) !important;
+    font-style: italic;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-style: normal;
+    line-height: 1em;
+}
+
+.hero-2 p {
+    color: rgb(255, 255, 255);
+    overflow-wrap: break-word;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    width: 400px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.shipping {
+    background-color: #e1ebec;
+    padding: 2rem 0;
+    justify-content: center;
+    gap: 2em;
+    display: flex;
+}
+
+.shipping .shipping-item {
+    padding: 1rem;
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(173, 172, 172);
+}
+
+.shipping .shipping-item span {
+    color: #4499e4;
+}
+
+.shipping .shipping-item h4 {
+    color: #000000;
+    font-weight: bold;
+}
+
+.shipping .shipping-item p {
+    color: #000000
+}
+
+.shipping-2 {
+    padding: 20px;
+}
+
+.shipping i {
+    font-size: 2rem;
+    color: #4499e4;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid rgb(173, 172, 172);
+}
+
+.product-head {
+    width: 650px;
+    margin: auto;
+    margin-top: 5em;
+    margin-bottom: 3em;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 1em;
+}
+
+.product-head a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0px;
+}
+
+.product-head a:focus {
+    background-color: #2093c9;
+    color: white;
+}
+
+.product-head a:hover:active {
+    background-color: #2093c9;
+    color: white;
+}
+
+.product .gym {
+    margin-left: 6em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000000;
+    margin-bottom: 1em;
+}
+
+.product form {
+    display: flex;
+    justify-content: center;
+}
+
+.product form input {
+    padding: 10px 15px;
+    outline: none;
+}
+
+.product form button {
+    padding: 10px 15px;
+    border: 1px solid black;
+    color: white;
+    background-color: #00508a;
+}
+
+.product .gym::first-letter {
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+}
+
+.product-items-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    gap: 2rem;
+    justify-content: center;
+}
+
+.product-items-1 img {
+    width: 100%;
+    height: 300px;
+    border: none;
+    object-fit: cover;
+}
+
+.container {
+    color: #000000;
+}
+
+.fa-star,
+.fa-star-half-alt {
+    color: #00508a;
+}
+
+.product-item-2 {
+    background-color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-item-2 h4 {
+    color: #000000;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.product-item-2 p {
+    color: #208bc9;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.snippet {
+    display: flex;
+    flex-direction: column;
+}
+
+.increase {
+    text-align: center;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* margin: -12px auto 5px auto; */
+}
+
+.increase span {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.increase :nth-child(1) {
+    color: #000000;
+    font-size: 25px;
+}
+
+.increase :nth-child(2) {
+    color: #2115c7;
+    font-size: 18px;
+}
+
+.increase :nth-child(3) {
+    color: #000000;
+    font-size: 18px;
+}
+
+.product-item-2 button {
+    background-color: #2093c9;
+    border: none;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.product-item-2 button:hover {
+    background-color: #1771a5;
+}
+
+.product-item-2 i {
+    margin-right: 0.5rem;
+}
+
+.product-item-2 ul i {
+    color: #50b2f4;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+
+.product-main {
+    height: auto;
+    margin-top: 4em;
+}
+
+.product-main .gym {
+    margin-left: 6em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000000;
+    margin-bottom: 1em;
+
+}
+
+.product-main .gym::first-letter {
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+}
+
+
+
+.product-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    gap: 2rem;
+    justify-content: center;
+}
+
+.product-2 img {
+    width: 100%;
+    height: 300px;
+    border: none;
+    object-fit: cover;
+}
+
+.product-2 .product-item-2 {
+    background-color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-2 .product-item-2 h4 {
+    color: #000000;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.product-2 .product-item-2 p {
+    color: #208bc9;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.increase {
+    text-align: center;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: -12px auto 5px auto;
+}
+
+.increase span {
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.increase :nth-child(1) {
+    color: #000000;
+    font-size: 25px;
+}
+
+.increase :nth-child(2) {
+    color: #2115c7;
+    font-size: 18px;
+}
+
+.increase :nth-child(3) {
+    color: #000000;
+    font-size: 18px;
+}
+
+.product-item-2 button {
+    background-color: #2093c9;
+    border: none;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.product-item-2 button:hover {
+    background-color: #1771a5;
+}
+
+.product-item-2 i {
+    margin-right: 0.5rem;
+}
+
+.product-item-2 ul i {
+    color: #50b2f4;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.view-1 {
+    width: 100%;
+    max-width: 400px;
+    height: 60px;
+    align-items: center;
+    align-content: center;
+    margin: 3em auto;
+}
+
+.view-1 a {
+    text-decoration: none;
+    margin: 0 7em;
+    background-color: #00508a;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+.view-btn a {
+    color: #fdfdfd;
+}
+
+.view-btn a:hover {
+    background-color: #00508a;
+    transition: 1s;
+    color: #fff !important;
+}
+
+.view-1 a:hover {
+    box-shadow: inset 242px 0 0 rgb(255, 255, 255);
+    transition: 2s;
+    color: #000000;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+
+button:hover {
+    animation: sh0 0.5s ease-in-out both;
+}
+
+@keyframes sh0 {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: rotate(7deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(-7deg) translate3d(0, 0, 0);
+    }
+
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
+
+
+
+
+
+/* footer section */
+footer {
+    display: flex;
+    padding: 3rem 0 2rem 0;
+    margin-top: 5rem;
+    width: 100%;
+    gap: 5rem;
+    background-color: #3a5fa5;
+}
+
+.fot-1 {
+    margin: 0 auto;
+    text-align: start;
+}
+
+.fot-1 h3 {
+    margin-bottom: 2rem;
+    font-size: 35px !important;
+}
+
+.fot-1 h3:hover {
+    color: hsl(210, 2%, 46%);
+    cursor: pointer;
+}
+
+.fot-1 ul li {
+    list-style: none;
+    font-size: 1.2rem;
+    color: #eaf5fa;
+}
+
+.fot-1 a {
+    text-decoration: none;
+    color: #eaf5fa !important;
+    line-height: 1.5rem;
+}
+
+
+
+
+/* From Uiverse.io by Yaya12085 */
+.form {
+    display: flex;
+    flex-direction: column;
+    background: #06A1D1;
+    background: -webkit-linear-gradient(to right, #3f4c6b, #06A1D1);
+    background: linear-gradient(to right, #3c5363, #06A1D1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: auto;
+    max-width: 330px;
+}
+
+.title {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: #fff;
+}
+
+.description {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: rgb(209 213 219);
+}
+
+.form div {
+    display: flex;
+    max-width: 28rem;
+    margin-top: 1rem;
+    column-gap: 0.5rem;
+}
+
+.form div input {
+    outline: none;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+    color: rgb(255 255 255);
+    padding: 0.5rem 0.875rem;
+    background-color: rgb(255 255 255 / 0.05);
+    border: 1px solid rgba(253, 253, 253, 0.363);
+    border-radius: 0.375rem;
+    flex: 1 1 auto;
+}
+
+.form div input::placeholder {
+    color: rgb(216, 212, 212);
+}
+
+.form div input:focus {
+    border: 1px solid rgb(99 102 241);
+}
+
+.form div button {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.625rem 0.875rem;
+    background-color: rgb(99 102 241);
+    border-radius: 0.375rem;
+    border: none;
+    outline: none;
+}
+
+/* last footer */
+.last-footer {
+    margin-top: -1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #00508a;
+}
+
+.follow-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000 !important;
+}
+
+.follow-us h3 {
+    margin: 0 3rem;
+}
+
+.follow-us a {
+    text-decoration: none;
+    color: white !important;
+}
+
+.follow-us i {
+    margin-left: 2rem;
+}
+
+.last-footer p {
+    color: white !important;
+}
+
+
+
+/* responsive */
+@media (max-width: 360px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .cart-count {
+        position: relative;
+       transform: translate(em, 0.6em);
+    }
+
+    .hero {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    .hero-2 {
+        margin-top: 10em;
+        width: 90%;
+        margin: auto;
+        height: auto;
+    }
+
+    .hero-2 h1 {
+        font-size: 25px;
+        line-height: 1.5em;
+    }
+
+    .hero-2 p {
+        font-size: 18px;
+        width: 350px;
+    }
+
+    .shipping {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .shipping .shipping-item {
+        width: 320px;
+        margin: auto;
+    }
+
+    .product {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .product-items-1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product-head {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .product-head a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: rgb(41, 57, 197);
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 20px;
+        margin: 0px;
+    }
+
+    .view-1 {
+        width: 100%;
+    }
+
+    .view-1 a {
+        text-decoration: none;
+        margin: 0 7em;
+        background-color: #00508a;
+        color: white;
+        padding: 10px;
+    }
+
+    .product-main .gym {
+        white-space: nowrap;
+        font-size: 15px;
+    }
+
+    .product-main .gym::first-letter {
+        white-space: nowrap;
+        font-size: 25px;
+    }
+
+    .product-2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    /* footer */
+    footer {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    .fot-1 ul li {
+        font-size: 16px;
+    }
+
+    .form {
+        position: relative;
+        width: 70%;
+        margin: auto;
+    }
+
+    .form #email-address {
+        width: 120px;
+        padding: 10px;
+    }
+
+    .form span {
+        font-size: 18px;
+    }
+
+    #Prohealth {
+        font-size: 15px;
+        white-space: nowrap;
+        position: relative;
+        left: 1rem;
+    }
+
+    .last-footer {
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .last-footer h3 {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .last-footer i {
+        font-size: 10px;
+        right: 10px;
+    }
+
+    .last-footer p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* responsive */
+@media (max-width: 440px) {
+    .navbar {
+        width: 100%;
+    }
+
+
+    .cart-count {
+        position: relative;
+       transform: translate(-19em, 0.6em);
+    }
+
+
+    .hero {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    .hero-2 {
+        margin-top: 10em;
+        width: 90%;
+        margin: auto;
+        height: auto;
+    }
+
+    .hero-2 h1 {
+        font-size: 25px;
+        line-height: 1.5em;
+    }
+
+    .hero-2 p {
+        font-size: 18px;
+        width: 350px;
+    }
+
+    .shipping {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .shipping .shipping-item {
+        width: 320px;
+        margin: auto;
+    }
+
+    .product {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .product-items-1 {
+        grid-template-columns: repeat(1, 350px);
+    }
+
+    .product-head {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .product-head a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: rgb(41, 57, 197);
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 20px;
+        margin: 0px;
+    }
+
+    .view-1 {
+        width: 100%;
+    }
+
+    .view-1 a {
+        text-decoration: none;
+        margin: 0 7em;
+        background-color: #00508a;
+        color: white;
+        padding: 10px;
+    }
+
+    .product-main .gym {
+        white-space: nowrap;
+        font-size: 15px;
+    }
+
+    .product-main .gym::first-letter {
+        white-space: nowrap;
+        font-size: 25px;
+    }
+
+    .product-2 {
+        display: grid;
+        grid-template-columns: repeat(1, 350px);
+        gap: 2rem;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    /* footer */
+    footer {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    .fot-1 ul li {
+        font-size: 16px;
+    }
+
+    .form {
+        position: relative;
+        right: 1rem;
+    }
+
+    .form span {
+        font-size: 18px;
+    }
+
+    #Prohealth {
+        font-size: 15px;
+        white-space: nowrap;
+        position: relative;
+        left: 1rem;
+    }
+
+    .last-footer {
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .last-footer h3 {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .last-footer i {
+        font-size: 10px;
+        right: 10px;
+    }
+
+    .last-footer p {
+        font-size: 14px;
+    }
+}
+
+
+
+/* responsive */
+@media (max-width: 576px) {
+    .navbar {
+        width: 100%;
+    }
+    .cart-count {
+        position: relative;
+       transform: translate(-27em, 0.6em);
+    }
+
+    .hero {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    .hero-2 {
+        margin-top: 10em;
+        width: 90%;
+        margin: auto;
+        height: auto;
+    }
+
+    .hero-2 h1 {
+        font-size: 25px;
+        line-height: 1.5em;
+    }
+
+    .hero-2 p {
+        font-size: 18px;
+        width: 350px;
+    }
+
+    .shipping {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .shipping .shipping-item {
+        width: 320px;
+        margin: auto;
+    }
+
+    .product {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .product-items-1 {
+        grid-template-columns: repeat(1, 320px);
+
+    }
+
+    .product-item-2 h4 {
+        font-size: 15px;
+    }
+
+    .product-item-2 ul i {
+        font-size: 10px;
+    }
+
+    .product-head {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .product-head a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: rgb(41, 57, 197);
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 20px;
+        margin: 0px;
+    }
+
+    .view-1 {
+        width: 100%;
+    }
+
+    .view-1 a {
+        text-decoration: none;
+        margin: 0 7em;
+        background-color: #00508a;
+        color: white;
+        padding: 10px;
+    }
+
+    .product-main .gym {
+        white-space: nowrap;
+        font-size: 15px;
+    }
+
+    .product-main .gym::first-letter {
+        white-space: nowrap;
+        font-size: 25px;
+    }
+
+    .product-2 {
+        display: grid;
+        grid-template-columns: repeat(1, 320px);
+        gap: 2rem;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    /* footer */
+    footer {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    .fot-1 ul li {
+        font-size: 16px;
+    }
+
+    .form {
+        position: relative;
+        margin: auto;
+        left: 2em;
+    }
+
+    .form span {
+        font-size: 18px;
+    }
+
+    #Prohealth {
+        font-size: 15px;
+        white-space: nowrap;
+        position: relative;
+        left: 1rem;
+    }
+
+    .last-footer {
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .last-footer h3 {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .last-footer i {
+        font-size: 10px;
+        right: 10px;
+    }
+
+    .last-footer p {
+        font-size: 14px;
+    }
+}

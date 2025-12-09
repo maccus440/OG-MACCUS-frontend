@@ -1,0 +1,86 @@
+:root {
+      --brand-primary: #3A7CA5;
+      --brand-primary-light: #5d9dc7;
+      --brand-primary-dark: #2a5d7a;
+      --brand-bg-light: #f0f7fa;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f8fbfd 0%, #eaf5f9 100%);
+      font-family: 'Poppins', sans-serif;
+      padding-bottom: 2rem;
+    }
+
+    .register-card {
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(58, 124, 165, 0.12);
+      overflow: hidden;
+      border: 1px solid rgba(58, 124, 165, 0.1);
+    }
+
+    .register-header {
+      background: linear-gradient(90deg, var(--brand-primary), var(--brand-primary-dark));
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .form-section {
+      background-color: var(--brand-bg-light);
+      border-left: 3px solid var(--brand-primary);
+    }
+
+    .health-icon {
+      width: 36px;
+      height: 36px;
+      background: rgba(58, 124, 165, 0.1);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+      color: var(--brand-primary);
+    }
+
+    /* Custom button */
+    .btn-brand {
+      background-color: var(--brand-primary);
+      border-color: var(--brand-primary);
+    }
+    .btn-brand:hover {
+      background-color: var(--brand-primary-dark);
+      border-color: var(--brand-primary-dark);
+    }
+
+    /* Form controls */
+    .form-control:focus,
+    .form-select:focus {
+      border-color: var(--brand-primary);
+      box-shadow: 0 0 0 0.25rem rgba(58, 124, 165, 0.25);
+    }
+
+    /* Checkbox styling */
+    .form-check-input:checked {
+      background-color: var(--brand-primary);
+      border-color: var(--brand-primary);
+    }
+
+    /* Input group icons */
+    .input-group-text {
+      background-color: #f8fbfd;
+      border-color: #ced4da;
+    }
+
+    footer a {
+      color: var(--brand-primary);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .register-header h1 {
+        font-size: 1.5rem;
+      }
+    }

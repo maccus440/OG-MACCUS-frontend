@@ -1,0 +1,51 @@
+ :root {
+      --primary: #2a9d8f;
+      --dark: #264653;
+      --light: #f8f9fa;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fa;
+    }
+    .navbar-brand { font-weight: 800; }
+    .payment-container {
+      max-width: 900px;
+      margin: 2rem auto;
+    }
+    .payment-card {
+      border: none;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+    .payment-header {
+      background: linear-gradient(to right, var(--dark), var(--primary));
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    .payment-body {
+      background: white;
+      padding: 2.5rem;
+    }
+    .form-control:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 0.25rem rgba(42, 157, 143, 0.25);
+    }
+    .card-icon {
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
+    .card-logos {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+      opacity: 0.7;
+    }
+    .card-logo {
+      font-size: 1.8rem;
+    }
+    .visa { color: #1a1f71; }
+    .mastercard { color: #eb001b; }
+    .amex { color: #007bc1; }
+    .discover { color: #ff6000; }

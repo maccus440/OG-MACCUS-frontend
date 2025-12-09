@@ -1,0 +1,2223 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #f5f7fa;
+    color: var(--dark);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --primary: #2a9d8f;
+    --light: #f8f9fa;
+    --dark: #264653;
+    --gray: #e9ecef;
+    --success: #28a745;
+    --white: #ffffff;
+}
+
+
+.navbar {
+    background-color: #3A7CA5;
+    /* position: fixed; */
+    z-index: 99;
+    padding: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    color: #fff;
+    z-index: 9;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    /* Teal-green: modern & health-friendly */
+}
+.navbar-brand img{
+    width: 70px;
+    /* Teal-green: modern & health-friendly */
+}
+
+#mainNavbar {
+    margin-left: 8rem;
+}
+
+#fitness{
+ color: #00098a !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0.6rem 1rem;
+    color: #e6e2e2;
+    margin-left: 1rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: rgb(75, 75, 182) !important;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f8f5;
+    color: #5376c2;
+}
+
+.btn-outline-primary {
+    border-color: #ffffff;
+    padding: 0.56rem 2rem;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.btn-primary {
+    background-color: #275877;
+    padding: 0.56rem 2rem;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    box-shadow: inset 242px 0 0 white;
+    transition: 3s;
+    color: #000000;
+}
+
+/* hero section */
+.hero {
+    background-image: url(/assets/img/tanned-young-athletic-girl-doing-abs-workout-yoga-mat.jpg);
+    background-repeat: no-repeat;
+    position: sticky;
+    background-attachment: fixed;
+    background-size: cover;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.hero-2 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-2 h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    color: white !important;
+    font-style: italic;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5em;
+}
+
+.hero-2 h1 span {
+    background-color: #9b9c9c60;
+    border-radius: 2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.hero-2 h1 span i {
+    font-size: 23px;
+    background-color: #5aaef777;
+    padding: 15px;
+    border-radius: 1em;
+    color: white;
+}
+
+.hero-2 p {
+    color: white;
+    overflow-wrap: break-word;
+    width: 300px;
+    font-size: 16px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hero-2 form input {
+    padding: 15px;
+    border-radius: 15px 0 0 15px;
+    outline: none;
+    border: none;
+}
+
+.hero-2 input:valid {
+    border: 1px solid blue;
+}
+
+.hero-2 form input:invalid {
+    border: 1px solid red;
+}
+
+.hero-2 form button {
+    position: relative;
+    right: 4px;
+    font-size: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    outline: none;
+    background-color: #3A7CA5;
+    color: white;
+}
+
+.hero-2 form button:active {
+    background-color: rgb(92, 212, 216);
+    color: white;
+}
+
+
+
+.fitness-section {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    align-items: center;
+    align-items: center;
+    height: 400px;
+    background-color: #000000;
+    justify-content: center;
+}
+
+.fitness-section-2 {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-container {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.image-container img {
+    width: 400px;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.orange-flag {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 60px;
+    height: 40px;
+    background-color: #00a2ff;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    z-index: 1;
+}
+
+.content-container {
+    width: 450px;
+}
+
+.content-container h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #ffffff;
+}
+
+.content-container p {
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.progress-label {
+    font-weight: bold;
+    width: 160px;
+    font-size: 0.95rem;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 8px;
+    background-color: #333;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 12px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #3A7CA5;
+    border-radius: 4px;
+}
+
+.progress-percentage {
+    font-weight: bold;
+    width: 50px;
+    text-align: right;
+    font-size: 0.95rem;
+}
+
+
+/* pricing section */
+.pricing {
+    width: 100%;
+}
+
+.pricing h1 {
+    text-align: center;
+    margin-top: 2em;
+    color: #000000;
+}
+
+.pricing h1::after {
+    content: '';
+    position: absolute;
+    bottom: -13.5em;
+    left: 17em;
+    width: 10%;
+    height: 2px;
+    /* Thickness of the underline */
+    background-color: #00a2ff;/
+}
+
+.pricing-3 {
+    display: flex;
+    margin: 5em 0;
+    justify-content: center;
+}
+
+.pricing-3 h3 {
+    color: #000000;
+}
+
+.pricing-4 {
+    background-color: rgb(249, 251, 252);
+    margin-left: 2em;
+    box-shadow: 5px 10px 10px gray;
+    border: 1px solid rgb(201, 198, 198);
+    text-align: center;
+    padding-bottom: 2em;
+    width: 400px;
+    max-width: 450px;
+    height: auto;
+}
+
+.pricing-4 h3 {
+    margin: 1em 0;
+    width: 100%;
+    border: none;
+    padding-bottom: 1em;
+    border-bottom: 1px solid black;
+}
+
+.pricing-4 .amout {
+    width: 100%;
+    border: none;
+    height: 70px;
+    border-bottom: 1px solid black;
+}
+
+.pricing-4 .amout h2 {
+    color: #000000;
+    font-size: 25px;
+}
+
+.pricing-4 .amout span {
+    color: #3A7CA5;
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.pricing-4 .amout p {
+    color: #38789c;
+    position: relative;
+    top: -12px;
+    font-size: 20px;
+}
+
+.pricing-4 section {
+    flex-direction: column;
+    text-align: start;
+    display: flex;
+    line-height: 2em;
+    justify-content: center;
+    margin: auto;
+    padding: 1.5em 0;
+    width: 100%;
+}
+
+.pricing-4 section span {
+    color: #000000;
+    margin-left: 5em;
+}
+
+.pricing-4 section span i {
+    color: #3A7CA5;
+    margin-right: 1em;
+}
+
+.pricing-4 a {
+    text-decoration: none;
+    color: #000000;
+    padding: 1em 2em;
+    margin-bottom: 3em;
+    background-color: #3c83ac;
+}
+
+.pricing-4 a:hover {
+    background-color: #4187b3;
+}
+
+
+/* General body styling for dark background */
+
+/* Container for each progress bar group */
+.first-section {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(243, 246, 247);
+}
+
+.first-section h2 {
+    color: #000000;
+    margin-top: 2em;
+}
+
+.first-section .paragr {
+    color: #000000;
+    width: 700px;
+    margin: 2em auto;
+}
+
+.img-section {
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    display: flex;
+    width: 80%;
+
+}
+
+.img-section img {
+    width: 25vw;
+    object-fit: cover;
+    height: 400px;
+    border-radius: 2em;
+}
+
+.text-section {
+    width: 80%;
+    display: flex;
+    position: absolute;
+    transform: translate(10%, -25%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-section a {
+    width: 300px;
+    padding: 10px;
+    border-radius: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    margin-left: 7em;
+    text-decoration: none;
+    box-shadow: 5px 10px 10px rgb(150, 149, 149);
+}
+
+.text-section a h3 {
+    font-size: 18px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-section a p {
+    font-size: 15px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* work out */
+.workout {
+    width: 100%;
+    margin-top: 8rem;
+    background-color: #3a5fa5;
+    height: auto;
+}
+
+.workout-2 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.workout-2 img {
+    width: 320px;
+    height: 450px;
+    border-radius: 2em;
+}
+
+.workout-3 {
+    /* margin-left: 2em; */
+    text-align: center;
+    width: 400PX;
+}
+
+.workout-3 h3 {
+    margin-top: 2em;
+    font-family: sans-serif;
+}
+
+/* ANIMATION LIST */
+.animation-list {
+    height: 60px;
+    background-color: #000000;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    overflow-x: auto;
+    padding: 1rem 0;
+}
+
+.animation-list::-webkit-scrollbar {
+    display: none;
+}
+
+
+.animation-list ul {
+    display: flex;
+    white-space: nowrap;
+    font-size: 1.5em;
+}
+
+.animation-list ul li {
+    gap: rem;
+    animation: spin 5s infinite linear;
+    padding-right: 2em;
+}
+
+@keyframes spin {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.programm {
+    margin-top: 5em;
+}
+
+
+.programm h1 {
+    color: #000000;
+    font-size: 25px;
+    margin-left: 9em;
+    margin-bottom: 2em;
+}
+
+.second-program {
+    display: grid;
+    grid-template-columns: 550px 550px;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    gap: 3em;
+}
+
+.second-program-3 {
+    display: flex;
+    color: #000000;
+    box-shadow: 10px 10px 10px rgb(235, 235, 238);
+    height: auto;
+    padding-bottom: 2em;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+
+.second-program-3:hover {
+    transform: scale(1.02);
+    transition: 1S;
+}
+
+.second-program-3 img {
+    width: 250px;
+    object-fit: cover;
+}
+
+.second-program-3 section {
+    width: 100%;
+    margin-top: 2em;
+}
+
+.second-program-3 section h3 {
+    color: #3a5fa5;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.second-program-3 section p {
+    font-size: 15px;
+    margin-bottom: 2em;
+    color: #000000;
+}
+
+.second-program-3 section a {
+    font-size: 18px;
+    background-color: #3a5fa5;
+    color: white;
+    padding: 0.56em 1.5em;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+
+
+/* training */
+.personal-train {
+    margin-top: 3em;
+    background: #3a5fa5;
+    /* background-image: url(/assets/img/woman-helping-man-gym.jpg); */
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.personal-train h1 {
+    text-align: center;
+    font-size: 70px;
+    color: #000000;
+}
+
+.training-table {
+    display: flex;
+    width: 700px;
+    margin: auto;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.training-table section {
+    margin-left: 2em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.training-table section h2 {
+    font-size: 2em;
+}
+
+.training-table section span {
+    color: rgb(255, 255, 255);
+}
+
+.personal-train-2 {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    gap: 2em;
+    width: 50%;
+}
+
+.personal-train-2 .tr-pic {
+    width: 400px;
+    height: 80vh;
+    border-radius: 1.5em;
+    object-fit: cover;
+}
+
+.personal-train-2 .personal-train-3 {
+    flex-direction: column;
+    margin-top: -8em;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal-train-2 .personal-train-3 img {
+    height: 250px;
+    margin: auto;
+    border-radius: 1.5em;
+    width: 350px;
+    object-fit: cover;
+}
+
+.personal-train-2 .personal-train-3 p {
+    width: 300px;
+    font-size: 25px;
+    margin: 2em auto;
+}
+
+.personal-train-2 .personal-train-3 a {
+    margin: auto;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 2em;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    background-color: white;
+}
+
+.personal-train-2 .personal-train-3 a i {
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    background-color: blue;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 2em;
+}
+
+
+/* FORM SECTION */
+
+.consultation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 1450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10em;
+    height: 55vh;
+}
+
+.consultation .left img {
+    object-fit: cover;
+    height: 520px;
+    width: 720px;
+}
+
+.consultation .right {
+    flex: 1;
+    background-color: #3a5fa5;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.consultation h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.consultation p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+
+
+.grid-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+label {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.grid-form input,
+.grid-form select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form-extra input {
+    position: relative;
+    right: 11.9rem;
+    top: 20px;
+}
+
+.form-extra {
+    position: relative;
+    left: 30px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.submit {
+    width: 150px;
+    font-size: 1em;
+    padding: 10px;
+    border: none;
+    color: #ffff;
+    background-color: #272d46;
+}
+
+.submit:active {
+    color: rgb(136, 136, 175);
+    color: #fff;
+}
+
+
+
+
+/* footer section */
+footer {
+    display: flex;
+    padding: 3rem 0 2rem 0;
+    margin-top: 5rem;
+    width: 100%;
+    gap: 5rem;
+    background-color: #3a5fa5;
+}
+
+.fot-1 {
+    margin: 0 auto;
+    text-align: start;
+}
+
+.fot-1 h3 {
+    margin-bottom: 2rem;
+    font-size: 35px !important;
+}
+
+.fot-1 h3:hover {
+    color: hsl(210, 2%, 46%);
+    cursor: pointer;
+}
+
+.fot-1 ul li {
+    list-style: none;
+    font-size: 1.2rem;
+    color: #eaf5fa;
+}
+
+.fot-1 a {
+    text-decoration: none;
+    color: #eaf5fa !important;
+    line-height: 1.5rem;
+}
+
+
+
+
+/* From Uiverse.io by Yaya12085 */
+.form {
+    display: flex;
+    flex-direction: column;
+    background: #06A1D1;
+    background: -webkit-linear-gradient(to right, #3f4c6b, #06A1D1);
+    background: linear-gradient(to right, #3c5363, #06A1D1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: auto;
+    max-width: 330px;
+}
+
+.title {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: #fff;
+}
+
+.description {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: rgb(209 213 219);
+}
+
+.form div {
+    display: flex;
+    max-width: 28rem;
+    margin-top: 1rem;
+    column-gap: 0.5rem;
+}
+
+.form div input {
+    outline: none;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+    color: rgb(255 255 255);
+    padding: 0.5rem 0.875rem;
+    background-color: rgb(255 255 255 / 0.05);
+    border: 1px solid rgba(253, 253, 253, 0.363);
+    border-radius: 0.375rem;
+    flex: 1 1 auto;
+}
+
+.form div input::placeholder {
+    color: rgb(216, 212, 212);
+}
+
+.form div input:focus {
+    border: 1px solid rgb(99 102 241);
+}
+
+.form div button {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.625rem 0.875rem;
+    background-color: #344bad;
+    border-radius: 0.375rem;
+    border: none;
+    outline: none;
+}
+
+/* last footer */
+.last-footer {
+    margin-top: -1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #00508a;
+}
+
+.follow-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000 !important;
+}
+
+.follow-us h3 {
+    margin: 0 3rem;
+}
+
+.follow-us a {
+    text-decoration: none;
+    color: white !important;
+}
+
+.follow-us i {
+    margin-left: 2rem;
+}
+
+.last-footer p {
+    color: white !important;
+}
+
+
+
+
+
+/* responsive */
+@media (max-width: 360px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .hero-2 h1 {
+        text-transform: uppercase;
+        font-size: 20px;
+        color: rgb(255, 255, 255) !important;
+        font-style: italic;
+        font-family: "Momo Trust Display", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.5em;
+    }
+
+    .hero-2 h1 span i {
+        font-size: 13px;
+        background-color: #5aaef777;
+        padding: 15px;
+        border-radius: 1em;
+        color: white;
+    }
+
+    .hero-2 form {
+        white-space: nowrap;
+        display: flex;
+    }
+
+    .hero-2 form input {
+        padding: 9px;
+        height: 45px;
+        border-radius: 15px 0 0 15px;
+        outline: none;
+        border: none;
+    }
+
+    .hero-2 form button {
+        font-size: 10px;
+    }
+
+    .fitness-section {
+        height: auto;
+        justify-content: center;
+        overflow: hidden;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    .fitness-section-2 {
+        flex-direction: column;
+        overflow: hidden;
+        width: 180%;
+    }
+
+    .image-container img {
+        width: 350px;
+        height: 350px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .content-container {
+        margin-top: 2em;
+        text-align: center;
+        width: 350px;
+    }
+
+    .content-container h2 {
+        font-size: 20px;
+    }
+
+    .content-container p {
+        color: #cccccc;
+        line-height: 1.6;
+        font-size: 15px;
+        margin-bottom: 24px;
+    }
+
+    .progress-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .pricing {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .pricing h1 {
+        text-align: center;
+        margin-top: 2em;
+        color: #000000;
+    }
+
+    .pricing h1::after {
+        content: '';
+        position: absolute;
+        bottom: -28.5em;
+        left: 5em;
+        width: 10%;
+        height: 2px;
+        /* Thickness of the underline */
+        background-color: #00a2ff;/
+    }
+
+    .pricing-3 {
+        flex-direction: column;
+        width: 100%;
+        margin: 5em 0;
+        justify-content: center;
+    }
+
+    .pricing-4 {
+        width: 250px;
+        margin-bottom: 3em;
+    }
+
+    .first-section {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-section {
+        width: 100%;
+        flex-direction: column;justify-content: center;
+
+    }
+
+    .img-section img {
+        width: 80vw;
+        object-fit: cover;
+        margin: auto;
+        height: 400px;
+        border-radius: 2em;
+    }
+
+    .first-section h2 {
+        color: #000000;
+        font-size: 18px;
+        font-weight: bolder;
+        margin-top: 2em;
+    }
+
+    .first-section .paragr {
+        color: #000000;
+        width: 250px;
+    }
+
+    .text-section {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        margin-top: 5em;
+        top: 5em;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-section a {
+        margin-right: 10em;
+        margin-bottom: 2em;
+        width: 80%;
+        height: auto;
+        padding: 10px;
+        box-shadow: 5px 10px 10px rgb(150, 149, 149);
+    }
+    .workout{
+        width: 100%;
+        overflow: hidden;
+    }
+    .workout-2{
+        flex-direction: column;
+        overflow: hidden;
+        gap: 1em;
+        justify-content: center;
+    }
+    .workout-2 img{
+      width: 80vw;
+      object-fit: cover;
+    }
+    .programm {
+    margin-top: 5em;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+.programm h1 {
+    color: #000000;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    right: 9rem;
+    overflow: hidden;
+    width: 90%;
+    overflow-wrap: break-word;
+    margin-right: 10rem;
+}
+.second-program {
+    grid-template-columns: 550px;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    gap: 3em;
+}
+.second-program-3 {
+    flex-direction: column;
+    margin: auto;
+    color: #000000;
+    box-shadow: 10px 10px 10px rgb(235, 235, 238);
+    height: auto;
+    padding-bottom: 2em;
+    justify-content: space-between;
+    width: 300px;
+    gap: 2rem;
+}
+.second-program-3 img {
+    width: 250px;
+    object-fit: cover;
+}
+
+.second-program-3 section {
+    width: 100%;
+    margin-top: 2em;
+}
+
+.second-program-3 section h3 {
+    color: #5aaef7;
+    margin-bottom: 1em;
+    font-size: 15px;
+}
+
+.second-program-3 section p {
+    font-size: 12px;
+    margin-bottom: 2em;
+    color: #000000;
+}
+.personal-train {
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    background-size: cover;
+}
+.training-table {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    font-size: 25px;
+}
+.personal-train h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #5aaef7;
+}
+.training-table section {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.training-table section h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.training-table section p {
+    font-size: 15px;
+}
+.training-table section span {
+    font-size: 18px;
+}
+.personal-train-2 {
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    gap: 2em;
+    width: 50%;
+}
+.personal-train-2 .tr-pic {
+    width: 250px;
+    height: 350px;
+}
+.personal-train-2 .personal-train-3 img {
+    height: 250px;
+    margin: auto;
+    border-radius: 1.5em;
+    width: 250px;
+    object-fit: cover;
+}
+.personal-train-2 .personal-train-3 p {
+    width: 300px;
+    font-size: 20px;
+}
+.personal-train-3{
+    position: relative;
+    top: 10rem;
+}
+.personal-train-2 .personal-train-3 a {
+    margin: auto;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 2em;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: white;
+}
+.consultation {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 55vh;
+}
+.consultation .left img {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+.consultation .right {
+    flex-direction: column;
+}
+.consultation h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.consultation p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+.grid-form {
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+.form-extra {
+    position: relative;
+    left: 30px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.form-extra input {
+    position: relative;
+    right: 10rem;
+    top: 20px;
+}
+
+    /* footer */
+    footer {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+        margin-top: 40rem;
+    }
+
+    .fot-1 ul li {
+        font-size: 16px;
+    }
+
+    .form {
+        position: relative;
+        right: 1rem;
+    }
+
+    .form span {
+        font-size: 18px;
+    }
+
+    #Prohealth {
+        font-size: 15px;
+        white-space: nowrap;
+        position: relative;
+        left: 1rem;
+    }
+
+    .last-footer {
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .last-footer h3 {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .last-footer i {
+        font-size: 10px;
+        right: 10px;
+    }
+
+    .last-footer p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+@media (max-width: 440px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .hero-2 h1 {
+        text-transform: uppercase;
+        font-size: 20px;
+        color: rgb(255, 255, 255) !important;
+        font-style: italic;
+        font-family: "Momo Trust Display", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.5em;
+    }
+
+    .hero-2 h1 span i {
+        font-size: 13px;
+        background-color: #5aaef777;
+        padding: 15px;
+        border-radius: 1em;
+        color: white;
+    }
+
+    .hero-2 form {
+        white-space: nowrap;
+        display: flex;
+    }
+
+    .hero-2 form input {
+        padding: 9px;
+        height: 45px;
+        border-radius: 15px 0 0 15px;
+        outline: none;
+        border: none;
+    }
+
+    .hero-2 form button {
+        font-size: 10px;
+    }
+
+    .fitness-section {
+        height: auto;
+        justify-content: center;
+        overflow: hidden;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    .fitness-section-2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 180%;
+    }
+
+    .image-container img {
+        width: 350px;
+        height: 350px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .content-container {
+        margin-top: 2em;
+        text-align: center;
+        width: 350px;
+    }
+
+    .content-container h2 {
+        font-size: 20px;
+    }
+
+    .content-container p {
+        color: #cccccc;
+        line-height: 1.6;
+        font-size: 15px;
+        margin-bottom: 24px;
+    }
+
+    .progress-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .pricing {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .pricing h1 {
+        text-align: center;
+        margin-top: 2em;
+        color: #000000;
+    }
+
+    .pricing h1::after {
+        content: '';
+        position: absolute;
+        bottom: -26.5em;
+        left: 5em;
+        width: 30%;
+        height: 2px;
+        /* Thickness of the underline */
+        background-color: #00a2ff;/
+    }
+
+    .pricing-3 {
+        flex-direction: column;
+        width: 100%;
+        margin: 5em 0;
+        justify-content: center;
+    }
+
+    .pricing-4 {
+        width: 300px;
+        margin: 3em auto;
+    }
+
+    .first-section {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-section {
+        width: 100%;
+        flex-direction: column;justify-content: center;
+
+    }
+
+    .img-section img {
+        width: 80vw;
+        object-fit: cover;
+        margin: auto;
+        height: 400px;
+        border-radius: 2em;
+    }
+
+    .first-section h2 {
+        color: #000000;
+        font-size: 18px;
+        font-weight: bolder;
+        margin-top: 2em;
+    }
+
+    .first-section .paragr {
+        color: #000000;
+        width: 250px;
+    }
+
+    .text-section {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        margin-top: 5em;
+        top: 5em;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-section a {
+        margin-right: 10em;
+        margin-bottom: 2em;
+        width: 80%;
+        height: auto;
+        padding: 10px;
+        box-shadow: 5px 10px 10px rgb(150, 149, 149);
+    }
+    .workout{
+        width: 100%;
+        overflow: hidden;
+    }
+    .workout-2{
+        flex-direction: column;
+        overflow: hidden;
+        gap: 1em;
+        justify-content: center;
+    }
+    .workout-2 img{
+      width: 80vw;
+      object-fit: cover;
+    }
+    .programm {
+    margin-top: 5em;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+.programm h1 {
+    color: #000000;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    right: 9rem;
+    overflow: hidden;
+    width: 90%;
+    overflow-wrap: break-word;
+    margin-right: 10rem;
+}
+.second-program {
+    grid-template-columns: 550px;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    gap: 3em;
+}
+.second-program-3 {
+    flex-direction: column;
+    margin: auto;
+    color: #000000;
+    box-shadow: 10px 10px 10px rgb(235, 235, 238);
+    height: auto;
+    padding-bottom: 2em;
+    justify-content: space-between;
+    width: 300px;
+    gap: 2rem;
+}
+.second-program-3 img {
+    width: 250px;
+    object-fit: cover;
+}
+
+.second-program-3 section {
+    width: 100%;
+    margin-top: 2em;
+}
+
+.second-program-3 section h3 {
+    color: #5aaef7;
+    margin-bottom: 1em;
+    font-size: 15px;
+}
+
+.second-program-3 section p {
+    font-size: 12px;
+    margin-bottom: 2em;
+    color: #000000;
+}
+.personal-train {
+    justify-content: center;
+    height: auto;
+    height: 240vh;
+    align-items: center;
+    background-size: cover;
+}
+.training-table {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    font-size: 25px;
+}
+.personal-train h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #5aaef7;
+}
+.training-table section {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.training-table section h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.training-table section p {
+    font-size: 15px;
+}
+.training-table section span {
+    font-size: 18px;
+}
+.personal-train-2 {
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    gap: 2em;
+    width: 50%;
+}
+.personal-train-2 .tr-pic {
+    width: 250px;
+    height: 350px;
+}
+.personal-train-2 .personal-train-3 img {
+    height: 250px;
+    margin: auto;
+    border-radius: 1.5em;
+    width: 250px;
+    object-fit: cover;
+}
+.personal-train-2 .personal-train-3 p {
+    width: 300px;
+    font-size: 20px;
+}
+.personal-train-3{
+    position: relative;
+    top: 10rem;
+}
+.personal-train-2 .personal-train-3 a {
+    margin: auto;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 2em;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: white;
+}
+.consultation {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28em;
+    height: 55vh;
+}
+.consultation .left img {
+    object-fit: cover;
+    height: 520px;
+    width: 100%;
+}
+.consultation .right {
+    flex-direction: column;
+}
+.consultation h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.consultation p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+.grid-form {
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+.form-extra {
+    position: relative;
+    left: 30px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.form-extra input {
+    position: relative;
+    right: 10rem;
+    top: 20px;
+}
+
+    /* footer */
+    footer {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+        margin-top: 40rem;
+    }
+
+    .fot-1 ul li {
+        font-size: 16px;
+    }
+
+    .form {
+        position: relative;
+        right: 1rem;
+    }
+
+    .form span {
+        font-size: 18px;
+    }
+
+    #Prohealth {
+        font-size: 15px;
+        white-space: nowrap;
+        position: relative;
+        left: 1rem;
+    }
+
+    .last-footer {
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .last-footer h3 {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .last-footer i {
+        font-size: 10px;
+        right: 10px;
+    }
+
+    .last-footer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .hero-2 h1 {
+        text-transform: uppercase;
+        font-size: 20px;
+        color: rgb(255, 255, 255) !important;
+        font-style: italic;
+        font-family: "Momo Trust Display", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.5em;
+    }
+
+    .hero-2 h1 span i {
+        font-size: 13px;
+        background-color: #5aaef777;
+        padding: 15px;
+        border-radius: 1em;
+        color: white;
+    }
+
+    .hero-2 form {
+        white-space: nowrap;
+        display: flex;
+    }
+
+    .hero-2 form input {
+        padding: 9px;
+        height: 45px;
+        border-radius: 15px 0 0 15px;
+        outline: none;
+        border: none;
+    }
+
+    .hero-2 form button {
+        font-size: 10px;
+    }
+
+    .fitness-section {
+        height: auto;
+        justify-content: center;
+        overflow: hidden;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    .fitness-section-2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 180%;
+    }
+
+    .image-container img {
+        width: 350px;
+        height: 350px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .content-container {
+        margin-top: 2em;
+        text-align: center;
+        width: 350px;
+    }
+
+    .content-container h2 {
+        font-size: 20px;
+    }
+
+    .content-container p {
+        color: #cccccc;
+        line-height: 1.6;
+        font-size: 15px;
+        margin-bottom: 24px;
+    }
+
+    .progress-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .pricing {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .pricing h1 {
+        text-align: center;
+        margin-top: 2em;
+        color: #000000;
+    }
+
+    .pricing h1::after {
+        content: '';
+        position: absolute;
+        bottom: -25.5em;
+        left: 7em;
+        width: 30%;
+        height: 2px;
+        /* Thickness of the underline */
+        background-color: #00a2ff;/
+    }
+
+    .pricing-3 {
+        flex-direction: column;
+        width: 100%;
+        margin: 5em 0;
+        justify-content: center;
+    }
+
+    .pricing-4 {
+        width: 350px;
+        margin: 3em auto;
+    }
+
+    .first-section {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-section {
+        width: 100%;
+        flex-direction: column;justify-content: center;
+
+    }
+
+    .img-section img {
+        width: 80vw;
+        object-fit: cover;
+        margin: 1em auto;
+        height: 400px;
+        border-radius: 2em;
+    }
+
+    .first-section h2 {
+        color: #347fc5;
+        font-size: 18px;
+        font-weight: bolder;
+        margin-top: 2em;
+    }
+
+    .first-section .paragr {
+        color: #000000;
+        width: 250px;
+    }
+
+    .text-section {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        margin-top: 5em;
+        top: 5em;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-section a {
+        margin-bottom: 2em;
+        margin-right: 5rem;
+        position: relative;
+        right: 4rem;
+        width: 60%;
+        height: auto;
+        padding: 10px;
+        box-shadow: 5px 10px 10px rgb(150, 149, 149);
+    }
+    .text-section a h3{
+        font-size: 25px;
+        color: #00a2ff;
+    }
+    .workout{
+        width: 100%;
+        overflow: hidden;
+    }
+    .workout-2{
+        flex-direction: column;
+        overflow: hidden;
+        gap: 1em;
+        justify-content: center;
+    }
+    .workout-2 img{
+      width: 80vw;
+      object-fit: cover;
+    }
+    .programm {
+    margin-top: 5em;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+.programm h1 {
+    color: #000000;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    right: 9rem;
+    overflow: hidden;
+    width: 90%;
+    overflow-wrap: break-word;
+    margin-right: 10rem;
+}
+.second-program {
+    grid-template-columns: 550px;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    gap: 3em;
+}
+.second-program-3 {
+    flex-direction: column;
+    margin: auto;
+    color: #000000;
+    box-shadow: 10px 10px 10px rgb(235, 235, 238);
+    height: auto;
+    padding-bottom: 2em;
+    justify-content: space-between;
+    width: 300px;
+    gap: 2rem;
+}
+.second-program-3 img {
+    width: 250px;
+    object-fit: cover;
+}
+
+.second-program-3 section {
+    width: 100%;
+    margin-top: 2em;
+}
+
+.second-program-3 section h3 {
+    color: #5aaef7;
+    margin-bottom: 1em;
+    font-size: 15px;
+}
+
+.second-program-3 section p {
+    font-size: 12px;
+    margin-bottom: 2em;
+    color: #000000;
+}
+.personal-train {
+    justify-content: center;
+    height: 175vh;
+    align-items: center;
+    background-size: cover;
+}
+.training-table {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    font-size: 25px;
+}
+.personal-train h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #5aaef7;
+}
+.training-table section {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.training-table section h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.training-table section p {
+    font-size: 15px;
+}
+.training-table section span {
+    font-size: 18px;
+}
+.personal-train-2 {
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    gap: 2em;
+    width: 50%;
+}
+.personal-train-2 .tr-pic {
+    height: 350px;
+    object-fit: cover;
+}
+.personal-train-2 .personal-train-3 img {
+    height: 250px;
+    margin: auto;
+    border-radius: 1.5em;
+    object-fit: cover;
+}
+.personal-train-2 .personal-train-3 p {
+    width: 300px;
+    font-size: 20px;
+}
+.personal-train-3{
+    position: relative;
+    top: 10rem;
+}
+.personal-train-2 .personal-train-3 a {
+    margin: auto;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 2em;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: white;
+}
+.consultation {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28em;
+    height: 55vh;
+}
+.consultation .left img {
+    object-fit: cover;
+    height: 520px;
+    width: 100%;
+}
+.consultation .right {
+    flex-direction: column;
+}
+.consultation h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.consultation p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+.grid-form {
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+.form-extra {
+    position: relative;
+    left: 30px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.form-extra input {
+    position: relative;
+    right: 17rem;
+    top: 20px;
+}
+
+    /* footer */
+    footer {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+        margin-top: 40rem;
+    }
+
+    .fot-1 ul li {
+        font-size: 25px;
+    }
+
+    .form {
+        position: relative;
+        right: 1rem;
+    }
+
+    .form span {
+        font-size: 18px;
+    }
+
+    #Prohealth {
+        font-size: 15px;
+        white-space: nowrap;
+        position: relative;
+        left: 1rem;
+    }
+
+    .last-footer {
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .last-footer h3 {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .last-footer i {
+        font-size: 10px;
+        right: 10px;
+    }
+
+    .last-footer p {
+        font-size: 14px;
+    }
+}
+

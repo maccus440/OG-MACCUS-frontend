@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WellnessCare</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/css-file/fitness.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arizonia&family=Caveat:wght@400..700&family=Cookie&family=Great+Vibes&family=Lobster&family=Pacifico&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Playwrite+DE+SAS:wght@100..400&family=Satisfy&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Health-Themed Navbar with Dropdown -->
+  <nav id="nav" class="navbar navbar-expand-lg navbar position-fixed w-100">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="/public/index.html">
+        <img src="/assets/img/TV.png" alt="">
+      </a>
+
+      <!-- Mobile Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <!-- Left-aligned nav links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/public/index.html">Home</a>
+          </li>
+
+          <!-- Dropdown Menu: Services -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="/public/fitness.html">Fitness</a></li>
+              <li><a class="dropdown-item" href="/public/nutrition.html">Nutriction</a></li>
+              <li><a class="dropdown-item" href="/public/News.html">Health Blog</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/public/contact.html">Contact</a></li>
+              <li><a class="dropdown-item" href="#">Lab Tests</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/public/product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/public/Appointment.html">Appointments</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/public/about-us.html">About</a>
+          </li>
+        </ul>
+
+        <!-- Right-aligned Login & Register -->
+        <div class="d-flex align-items-center">
+          <a href="/public/sign-up.html" class="btn btn-outline-primary me-2">Login</a>
+          <a href="/public/register.html" class="btn btn-primary">Register</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- hero section -->
+  <div class="hero">
+    <div class="hero-2">
+      <h1> Smart Platform for <br>
+        Health & Fitness <br> trainer
+        <span>
+          <i class="fa-solid fa-person-running"></i>
+          <i class="fa-solid fa-dumbbell"></i>
+          <i class="fa-solid fa-pump-medical"></i>
+        </span>
+      </h1>
+      <p>Smart digital tools to help fitness professionals deliver personalized, data-driven coaching — and help members
+        achieve lasting results.</p>
+
+      <form action="https://formspree.io/f/mpwoglkq" method="POST" action="">
+        <input type="email" name="email" placeholder="Enter Your Email">
+        <button type="submit">Get Started</button>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="fitness-section">
+    <div class="fitness-section-2">
+      <!-- Left: Image with Orange Flag -->
+      <div class="image-container">
+        <div class="orange-flag"></div>
+        <img
+          src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          alt="Trainer assisting client in gym">
+      </div>
+
+      <!-- Right: Content -->
+      <div class="content-container">
+        <h2>Get stronger and fitter with our most experienced trainers</h2>
+        <p>Every trainer at TrueVitality is certified, experienced, and trained in inclusive coaching — whether you’re
+          recovering from injury, neurodivergent, or just starting your journey.</p>
+
+        <!-- Progress Bars -->
+        <div class="progress-container">
+          <div class="progress-label">Fitness Training</div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 94%;"></div>
+          </div>
+          <div class="progress-percentage">94%</div>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-label">Cardio Training</div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 82%;"></div>
+          </div>
+          <div class="progress-percentage">82%</div>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-label">Body Building</div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 88%;"></div>
+          </div>
+          <div class="progress-percentage">88%</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="pricing">
+    <h1>PRICING FOR YOU</h1>
+    <div  data-aos="fade-up" class="pricing-2">
+      <div class="pricing-3">
+        <div class="pricing-4">
+          <h3>STARTER</h3>
+          <div class="amout">
+            <h2>29<span>$</span></h2>
+            <p>/ monthly</p>
+          </div>
+          <section>
+            <span><i class="fa-solid fa-check"></i> Access to gym & cardio zone</span>
+            <span><i class="fa-solid fa-check"></i> 2 group classes/week</span>
+            <span><i class="fa-solid fa-check"></i> Basic fitness assessment</span>
+            <span><i class="fa-solid fa-check"></i> Mobile app tracking</span>
+            <span><i class="fa-solid fa-check"></i> 1:1 coaching</span>
+          </section>
+          <a href="#">GET STARTED</a>
+        </div>
+        <div class="pricing-4">
+          <h3>ESSENTIAL</h3>
+          <div class="amout">
+            <h2>59<span>$</span></h2>
+            <p>/ monthly</p>
+          </div>
+          <section>
+            <span><i class="fa-solid fa-check"></i> Unlimited gym access</span>
+            <span><i class="fa-solid fa-check"></i> Unlimited group classes</span>
+            <span><i class="fa-solid fa-check"></i> Monthly progress review</span>
+            <span><i class="fa-solid fa-check"></i> Nutrition guidance (PDF)</span>
+            <span><i class="fa-solid fa-check"></i> 1 personal session/month</span>
+          </section>
+          <a href="#">GET STARTED</a>
+        </div>
+        <div class="pricing-4">
+          <h3>PREMIUM</h3>
+          <div class="amout">
+            <h2>99<span>$</span></h2>
+            <p>/ monthly</p>
+          </div>
+          <section>
+            <span><i class="fa-solid fa-check"></i> All Essential benefits</span>
+            <span><i class="fa-solid fa-check"></i> 4 personal sessions/month</span>
+            <span><i class="fa-solid fa-check"></i> Custom workout + meal plan</span>
+            <span><i class="fa-solid fa-check"></i> Bi-weekly check-ins</span>
+            <span><i class="fa-solid fa-check"></i> Priority booking & hour access</span>
+          </section>
+          <a href="#">GET STARTED</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-aos="fade-up"
+     data-aos-duration="3000" class="first-section">
+    <h2>
+      Train Smarter with Premium Equipment & Inclusive Design
+    </h2>
+    <p class="paragr">From adaptive resistance machines to sensory-friendly zones, our facility is designed for
+      performance — and comfort — for *every* body and mind.</p>
+    <div class="img-section">
+      <img src="/assets/img/runner2.jpg" alt="">
+      <img src="/assets/img/kettlebell.jpg" alt="">
+      <img src="/assets/img/tim.jpg" alt="">
+    </div>
+    <div class="text-section">
+      <a href="#">
+        <h3>Runner</h3>
+        <p>
+Explore the ultimate workout machines for gyms, fitness clubs and home training: access</p>
+      </a>
+      <a href="#">
+        <h3>Kettlebell Chrom 4 - 36 kg - 16</h3>
+        <p>This is an in-depth review of SET FOR SET's line of Kettlebells by Jan Libourel.
+</p>
+      </a>
+      <a href="#">
+        <h3>TIM-LI 150 KG Home Multi Gym</h3>
+        <p>TIM-LI 150 KG Home Multi Gym Workout Muscles Machine Mutli </p>
+      </a>
+    </div>
+  </div>
+
+  <!-- work out -->
+  <div class="workout">
+    <div class="workout-2">
+      <div class="workout-3">
+        <img src="/assets/img/person 1.jpeg" alt="">
+        <h3>Power YOGA</h3>
+        <p>Strength, balance, and mindful movement — with modifications for all levels and sensory needs.</p>
+      </div>
+      <div class="workout-3">
+        <img src="/assets/img/img 5.jpeg" alt="">
+        <h3>BATTLE BOX</h3>
+        <p>High-energy cardio & coordination drills. Non-contact options available. Great for focus & regulation.</p>
+      </div>
+      <div class="workout-3">
+        <img src="/assets/img/img 6.jpeg" alt="">
+        <h3>Foundations</h3>
+        <p>A beginner-friendly intro to movement, breathwork, and gym navigation — ideal for neurodivergent adults.</p>
+      </div>
+      <div class="workout-3">
+        <img src="/assets/img/img 6.jpeg" alt="">
+        <h3>Cardio Flow</h3>
+        <P>Torch calories, improve stamina, and push your limits with our energetic cardio programs.</P>
+      </div>
+    </div>
+  </div>
+
+  <!-- animation carousel -->
+  <div class="animation-list">
+    <ul>
+      <li>YOGA SERVICE</li>
+      <li>FITNESS AND GYM</li>
+      <li>HEALTH AND GYM</li>
+      <li>YOGA SERVICE</li>
+      <li>YOGA SERVICE</li>
+      <li>YOGA SERVICE</li>
+      <li>YOGA SERVICE</li>
+      <li>YOGA SERVICE</li>
+      <li>YOGA SERVICE</li>
+      <li>YOGA SERVICE</li>
+      <li>YOGA SERVICE</li>
+      <li>YOGA SERVICE</li>
+      <li>YOGA SERVICE</li>
+      <li>YOGA SERVICE</li>
+      <li>YOGA SERVICE</li>
+      <li>YOGA SERVICE</li>
+      <li>YOGA SERVICE</li>
+      <li>YOGA SERVICE</li>
+      <li>YOGA SERVICE</li>
+      <li>YOGA SERVICE</li>
+    </ul>
+  </div>
+
+  <!-- programm section -->
+  <div data-aos="fade-up"
+     data-aos-duration="3000" class="programm">
+    <h1>THE FITNESS PROGRAMMES AT GYM</h1>
+    <div class="second-program">
+      <div class="second-program-3">
+        <img src="/assets/img/full-shot-pregnant-woman-exercising.jpg" alt="">
+        <section>
+          <h3>2-Week Deload Workout Program</h3>
+          <P>Learn how to deload effectively with this 2-week program. Reduce fatigue, prevent overtraining, and prepare
+            your body for the next training phase.</P>
+          <P>6:00 AM - 5:00 PM</P>
+          <a href="#">Register</a>
+        </section>
+      </div>
+      <div class="second-program-3">
+        <img src="/assets/img/data-stats-around-person-doing-physical-activity.jpg" alt="">
+        <section>
+          <h3>What Are The Ideal Body Measurements?</h3>
+          <P>Find out what the ideal measurements are for a natural bodybuilder or a classical muscular male physique.
+          </P>
+          <P>6:00 AM - 5:00 PM</P>
+          <a href="#">Register</a>
+        </section>
+      </div>
+      <div class="second-program-3">
+        <img src="/assets/img/healthy-menu-recipe-food-diet.jpg" alt="">
+        <section>
+          <h3>The Clean Eating Diet Plan Guide</h3>
+          <P>Learn everything you need to know before starting the Clean Eating Diet plan including it's history,
+            guidelines & components, & all of the science behind it.</P>
+          <P>6:00 AM - 5:00 PM</P>
+          <a href="#">Register</a>
+        </section>
+      </div>
+      <div class="second-program-3">
+        <img src="/assets/img/handsome-black-man-is-engaged-gym.jpg" alt="">
+        <section>
+          <h3>The Best Forearm Workout for Strength and Size</h3>
+          <P>Build stronger, more defined forearms with targeted workouts, anatomy insights, and training tips to boost
+            grip strength and complete your physique.</P>
+          <P>6:00 AM - 5:00 PM</P>
+          <a href="#">Register</a>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="personal-train">
+    <h1>Personal Training</h1>
+    <div class="training-table">
+      <section>
+        <h2>10<span>+</span></h2>
+        <P>Years of Excellence</P>
+      </section>
+      <section>
+        <h2>120<span>+</span></h2>
+        <P>Expert Trainers</P>
+      </section>
+      <section>
+        <h2>5k<span>+</span></h2>
+        <P>Members</P>
+      </section>
+    </div>
+    <div class="personal-train-2">
+      <img class="tr-pic" src="/assets/img/trainer.jpg" alt="">
+      <div class="personal-train-3">
+        <img src="/assets/img/trainer2.jpg" alt="">
+        <p>Work only with competent specialist with many years of experience</p>
+
+        <a href="">Learn more<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- consultation -->
+  <section data-aos="fade-up"
+     data-aos-duration="3000" class="consultation">
+    <div class="left">
+      <img src="/assets/img/istockphoto-2153823097-1024x1024.jpg" alt="">
+    </div>
+
+    <div class="right">
+      <h2>BOOK CONSULTATION</h2>
+      <P>Every fitness challenge has a solution. Meet with our experts to discuss your goals and create a personalized
+        plan that suits your health, lifestyle, and schedule.
+      </P>
+
+      <form action="https://formspree.io/f/xnnoeedy" method="POST">
+        <div class="grid-form">
+          <label for="">
+            Your name <br>
+            <input type="text" placeholder="name" name="text" required>
+          </label>
+          <label for="">Service of Interest <br>
+            <select name="treatment">
+              <option value="">— Select —</option>
+              <option value="skin">Personal Training</option>
+              <option value="manicure">Nutrition Coaching</option>
+              <option value="nails">Rehab & Recovery</option>
+            </select>
+          </label>
+
+
+
+
+          <label for="tel">
+            Mobile Phone <br>
+            <input type="tel" name="phone" placeholder="Mobile Number" required>
+          </label>
+
+
+          <label for="date">
+            Date <br>
+            <input type="date" name="date">
+          </label>
+
+
+
+
+          <label for="email">
+            E-mail <br>
+            <input type="email" name="email" placeholder="Email" required>
+          </label>
+          <label> Preferred Trainer <br>
+            <select name="dermatologist">
+              <option value="">— No preference —</option>
+              <option value="jamie">Jamie — Strength & ADHD</option>
+              <option value="taylor">Taylor — Mobility & Autism</option>
+              <option value="morgan">Morgan — Nutrition & Chronic Pain</option>
+            </select>
+          </label>
+
+
+          <div class="form-extra">
+            <input type="checkbox" name="reminder" value="yes">
+            I want to receive reminder and update <br> regarding my booking
+          </div>
+
+          <button type="submit" class="submit">Confirm</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- foooter section -->
+  <footer>
+    <div class="fot-1">
+      <h3>Prohealth medical & <br> Healthcare Center</h3>
+      <ul>
+        <li><i class="bi bi-check"></i><span>No 4 cresent street orlu road</span></li>
+        <li><i class="bi bi-check"></i><span>+234-9048-4499-51</span></li>
+        <li><i class="bi bi-check"></i><span>vitelhealth@gmail.com</span></li>
+
+      </ul>
+    </div>
+    <div class="fot-1">
+      <ul>
+        <li> <a href="#" id="appointment">Appointment</a></li>
+        <li><a href="#" id="">About</a></li>
+        <li><a href="#" id="">Doctors</a></li>
+        <li><a href="#" id="">Nutrition</a></li>
+        <li><a href="#" id="">Health Blog
+          </a></li>
+      </ul>
+    </div>
+    <div class="fot-1">
+      <ul>
+        <li> <a href="#" id="">Blog</a></li>
+        <li><a href="#" id="">FAQs</a></li>
+        <li><a href="#" id="">Contact us</a></li>
+        <li><a href="#" id="">Privacy Policy</a></li>
+        <li><a href="#" id="">Terms & Condition
+          </a></li>
+      </ul>
+    </div>
+
+    <!-- From Uiverse.io by Yaya12085 -->
+    <form class="form shadow-sm">
+      <span class="title">Subscribe to our newsletter.</span>
+      <p class="description">Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis
+        tempor incididunt dolore.</p>
+      <div>
+        <input placeholder="Enter your email" type="email" name="email" id="email-address">
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+  </footer>
+
+
+  <div class="last-footer">
+    <div class="follow-us">
+      <h3>Follow us</h3>
+      <a href="#"><i class="bi bi-whatsapp"></i></a>
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-youtube"></i></a>
+      <a href="#"><i class="bi bi-twitter-x"></i></a>
+    </div>
+
+    <div class="col-md-6 mb-3 mb-md-0">
+      <p class="mb-0">© 2025 Exit Health. Empowering your wellness journey.</p>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+</body>
+
+</html>

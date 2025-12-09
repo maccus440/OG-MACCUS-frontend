@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WellnessCare</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/css-file/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- <script src="/second-login/javascript file/all-pages.js"></script> -->
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arizonia&family=Caveat:wght@400..700&family=Cookie&family=Great+Vibes&family=Lobster&family=Pacifico&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Playwrite+DE+SAS:wght@100..400&family=Satisfy&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Health-Themed Navbar with Dropdown -->
+  <nav id="nav" class="navbar navbar-expand-lg navbar position-fixed w-100">
+    <div class="container">
+      <!-- Brand -->
+       <a class="navbar-brand" href="/public/index.html">
+        <img src="/assets/img/TV.png" alt="">
+      </a>
+
+      <!-- Mobile Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <!-- Left-aligned nav links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/public/index.html">Home</a>
+          </li>
+
+          <!-- Dropdown Menu: Services -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="/public/fitness.html">Fitness</a></li>
+              <li><a class="dropdown-item" href="/public/nutrition.html">Nutriction</a></li>
+              <li><a class="dropdown-item" href="/public/News.html">Health Blog</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/public/contact.html">Contact</a></li>
+              <li><a class="dropdown-item" href="#">Lab Tests</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/public/product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/public/Appointment.html">Appointments</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/public/about-us.html">About</a>
+          </li>
+        </ul>
+
+        <!-- Right-aligned Login & Register -->
+        <div class="d-flex align-items-center">
+          <a id="login" href="/public/sign-up.html" class="btn btn-outline-primary me-2">Login</a>
+          <a href="/public/register.html" class="btn btn-primary">Register</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Optional page content -->
+  <div class="hero">
+    <div class="hero-1">
+      <div class="hero-2">
+        <h2 class="">Precision Care, Personalized for You</h2>
+      </div>
+      <h3 class="my-patient w-75 p-3">Your Health Is Our Concern</h3>
+      <p>We provide compassionate, personalized care for patients of all ages, helping you live your healthiest, most vibrant life.
+      </p>
+      <a class="btn btn-success py-3" href="#">Book an Appointment</a>
+    </div>
+  </div>
+
+  <!-- apply section -->
+  <div class="row w-100 justify-content-center fade-in">
+    <div class="row justify-content-center w-75" id="my-consult">
+      <div data-aos="zoom-out-up" id="div" class="card text-dark bg-light mb-3 justify-content-center py-4 px-3" style="max-width: 18rem;">
+        <a href="" class="text-decoration-none">
+          <i style="font-size: 35px; color: blue; width: 60px;"
+            class="fa-solid fa-clinic-medical ms-3 py-3 text-center "></i>
+          <div class="card-body">
+            <h5 style="font-size: 30px;" class="card-title text-dark mb-4">Clinic</h5>
+            <p class="card-text">Compassionate care. Modern medicine. Better lives.</h3>
+      <p>Trusted primary and specialist care delivering personalised treatments, preventive services</p>
+          </div>
+        </a>
+      </div>
+
+
+
+      <div data-aos="zoom-out-up" id="div" class="card text-dark bg-light mb-3 justify-content-center py-4 px-3" style="max-width: 18rem;">
+        <a href="" class="text-decoration-none">
+          <i style="font-size: 35px; color: blue; width: 60px;"
+            class="fa-solid fa-stethoscope ms-3 py-3 text-center"></i>
+          <div class="card-body">
+            <h5 style="font-size: 30px;" class="card-title mb-4 text-dark">Consultation</h5>
+            <p class="card-text">Book one-on-one consultations with our experienced physicians for diagnosis, treatment plans, and follow-up care.</p>
+          </div>
+        </a>
+      </div>
+
+
+      <div data-aos="zoom-out-up" id="div" class="card text-dark bg-light mb-3 justify-content-center py-4 px-3" style="max-width: 18rem;">
+        <a href="" class="text-decoration-none">
+          <i style="font-size: 35px; color: blue; width: 60px;"
+            class="fa-solid fa-map-marker-alt ms-3 py-3 text-center"></i>
+          <div class="card-body">
+            <h5 style="font-size: 30px;" class="card-title mb-4 text-dark">Our Location</h5>
+            <p class="card-text">Find us at 4 Crescent Street, Orlu Road. Open Mon–Fri 8:00–21:00, Sat–Sun 8:00–16:00.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- working days -->
+    <div data-aos="zoom-out-up"
+    data-aos-duration="1000" class="container-days py-5 fade-in">
+      <div class="row align-items-center">
+
+        <!-- Left Column: Image + Open Hours Card -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="position-relative">
+            <!-- Placeholder image - replace with your own -->
+            <img src="/assets/img/female-doctor-adjusting-her-surgeon-mask.jpg" alt="Doctor smiling"
+              class="img-fluid rounded-start" style="border-top-left-radius: 12px; border-bottom-left-radius: 12px;">
+
+            <!-- Open Hours Card -->
+            <div class="open-hours-card">
+              <h5>Open Hours</h5>
+              <ul>
+                <li><span>Monday</span><span>8.00 - 21.00</span></li>
+                <li><span>Tuesday</span><span>8.00 - 21.00</span></li>
+                <li><span>Wednesday</span><span>8.00 - 21.00</span></li>
+                <li><span>Thursday</span><span>8.00 - 21.00</span></li>
+                <li><span>Friday</span><span>8.00 - 21.00</span></li>
+                <li><span>Saturday/Sunday</span><span>8.00 - 16.00</span></li>
+              </ul>
+              <div class="cross-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-plus-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                  <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Cross Icon -->
+
+          </div>
+        </div>
+
+        <!-- Right Column: About Us Content -->
+        <div id="about" class="col-md-6">
+          <div class="ps-md-4">
+            <div class="section-title">ABOUT US</div>
+            <h1 class="about-us-title">Professional Medical Care in Full Measure</h1>
+            <p class="mt-3">
+              For us, there are no minor aspects, because a quality result always depends on trifles. Over the years of
+              our activities, we have gained the unique experience of organizing medical services for citizens and
+              foreign nationals.
+            </p>
+            <p>
+              Private patients, international organizations and corporate businesses feel safe and comfortable in
+              establishing relationships.
+            </p>
+
+            <button class="learn-more">
+              <a href="">
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Read More</span>
+              </a>
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- team section -->
+    <section class="teams">
+      <div class="who-we-are w-50">
+        <h4>Team</h4>
+        <h2>Our Team</h2>
+        <p>Empowering lives through knowledge
+          ,<br> Our Team at the health website is dedicated one click <br> at a time
+        </p>
+      </div>
+      <!-- Parent container: make it a flex row -->
+      <div class="workers w-100 m-auto d-flex flex-wrap justify-content-center gap-4">
+        <!-- Card 1 -->
+        <div class="card bg-light text-center">
+          <img src="/assets/img/african-american-doctor-female-lab-coat-with-stethoscope-outdoor.jpg" class="" alt="Sonia Alam">
+          <h5 class="mb-2">Sonia Grace</h5>
+          <p>Radiologist</p>
+          <div class="card-icon mb-2">
+            <a href="">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card bg-light text-center">
+          <img src="/assets/img/medium-shot-female-doctor-wearing-stethoscope.jpg" class="" alt="Sonia Alam">
+          <h5 class="mb-2">judy</h5>
+          <p>Dermatologists</p>
+          <a href="">
+            <div class="w-50 text-center ms-auto me-auto">
+              <i class="bi bi-facebook"></i>
+          </a>
+          <a href="">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card bg-light text-center">
+        <img src="/assets/img/portrait-african-american-doctor-hospital.jpg" class="" alt="Sonia Alam">
+        <h5 class="mb-2">Eric Nwankwo</h5>
+        <p>Cardiologists</p>
+        <div class="w-50 text-center ms-auto me-auto">
+          <i class="bi bi-facebook"></i>
+          </a>
+          <a href="">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card bg-light text-center">
+        <img src="/assets/img/doctor-offering-medical-teleconsultation.jpg" class="" alt="Sonia Alam">
+        <h5 class="mb-2">Adam Nathan</h5>
+        <p>Neurologists</p>
+        <div class="w-50 text-center ms-auto me-auto">
+          <i class="bi bi-facebook"></i>
+          </a>
+          <a href="">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+
+
+      <div data-aos="zoom-out-up"
+    data-aos-duration="1000" class="choose">
+
+        <img src="/assets/img/surgeon-counting-with-fingers.jpg" alt="">
+
+        <div class="right">
+          <h4>CHOOSE US</h4>
+          <h1>Why Choose Us</h1>
+          <ul>
+            <li><i class="bi bi-check"></i><span>safety is our first piroity</span></li>
+            <li><i class="bi bi-check"></i><span>Flexibility Treatment</span></li>
+            <li><i class="bi bi-check"></i><span>Diagnose with technology</span></li>
+            <li><i class="bi bi-check"></i><span>Reliable pricing</span></li>
+            <li><i class="bi bi-check"></i><span>Expert staff</span></li>
+          </ul>
+          <a href="">About Us</a>
+        </div>
+      </div>
+
+      <div class="awards">
+        <div class="awards-2">
+          <img src="https://i.pinimg.com/736x/94/74/5c/94745c17135a9dea260c9b411ce6c0fc.jpg" alt="">
+          <img src="https://i.pinimg.com/736x/5e/e0/05/5ee00568f685cacb0a6b7075a1b882db.jpg" alt="">
+          <img src="https://i.pinimg.com/736x/17/30/69/173069b7830e3baa014606b084fcf3d1.jpg" alt="">
+          <img src="https://i.pinimg.com/736x/94/74/5c/94745c17135a9dea260c9b411ce6c0fc.jpg" alt="">
+          <img src="https://i.pinimg.com/736x/94/74/5c/94745c17135a9dea260c9b411ce6c0fc.jpg" alt="">
+          <img src="https://i.pinimg.com/736x/94/74/5c/94745c17135a9dea260c9b411ce6c0fc.jpg" alt="">
+          <img src="https://i.pinimg.com/736x/94/74/5c/94745c17135a9dea260c9b411ce6c0fc.jpg" alt="">
+        </div>
+
+        <div aria-hidden class="awards-2">
+          <img src="https://i.pinimg.com/736x/94/74/5c/94745c17135a9dea260c9b411ce6c0fc.jpg" alt="">
+          <img src="https://i.pinimg.com/736x/5e/e0/05/5ee00568f685cacb0a6b7075a1b882db.jpg" alt="">
+          <img src="https://i.pinimg.com/736x/17/30/69/173069b7830e3baa014606b084fcf3d1.jpg" alt="">
+          <img src="https://i.pinimg.com/736x/94/74/5c/94745c17135a9dea260c9b411ce6c0fc.jpg" alt="">
+          <img src="https://i.pinimg.com/736x/94/74/5c/94745c17135a9dea260c9b411ce6c0fc.jpg" alt="">
+          <img src="https://i.pinimg.com/736x/94/74/5c/94745c17135a9dea260c9b411ce6c0fc.jpg" alt="">
+          <img src="https://i.pinimg.com/736x/94/74/5c/94745c17135a9dea260c9b411ce6c0fc.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="support">
+        <h2>We Support 100+ Autoimmune & <br> Inflammatory Conditions, Diagnosed or Not</h2>
+        <div class="support-list justify-content-center gap-5">
+          <div class="support-list-1">
+            <ul>
+              <li><i class="bi bi-check"></i><span>Addison’s Disease</span></li>
+              <li><i class="bi bi-check"></i><span>Ankylosing Spondylitis</span></li>
+              <li><i class="bi bi-check"></i><span>Alopecia</span></li>
+              <li><i class="bi bi-check"></i><span>Celiac Disease</span></li>
+            </ul>
+          </div>
+          <div class="support-list-1">
+            <ul>
+              <li><i class="bi bi-check"></i><span>Crohn's Disease</span></li>
+              <li><i class="bi bi-check"></i><span>Fibromyalgia</span></li>
+              <li><i class="bi bi-check"></i><span>Hashimoto’s Thyroiditis</span></li>
+              <li><i class="bi bi-check"></i><span>Hiradenitis Suppurativa
+                </span></li>
+            </ul>
+          </div>
+          <div class="support-list-1">
+            <ul>
+              <li><i class="bi bi-check"></i><span>Lichen Sclerosus</span></li>
+              <li><i class="bi bi-check"></i><span>Lupus</span></li>
+              <li><i class="bi bi-check"></i><span>Psoriasis</span></li>
+              <li><i class="bi bi-check"></i><span>Psoriatic Arthritis</span></li>
+            </ul>
+          </div>
+          <div class="support-list-1">
+            <ul>
+              <li><i class="bi bi-check"></i><span>Rheumatoid Arthritis</span></li>
+              <li><i class="bi bi-check"></i><span>Sjögren's Syndrome</span></li>
+              <li><i class="bi bi-check"></i><span>Ulcerative Colitis</span></li>
+              <li><i class="bi bi-check"></i><span>100+ more</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- foooter section -->
+      <footer>
+        <div class="fot-1">
+          <h3>Prohealth medical & <br> Healthcare Center</h3>
+          <ul>
+            <li><i class="bi bi-check"></i><span>No 4 cresent street orlu road</span></li>
+            <li><i class="bi bi-check"></i><span>+234-9048-4499-51</span></li>
+            <li><i class="bi bi-check"></i><span>vitelhealth@gmail.com</span></li>
+
+          </ul>
+        </div>
+        <div class="fot-1">
+          <ul>
+            <li> <a href="#" id="appointment">Appointment</a></li>
+            <li><a href="#" id="">About</a></li>
+            <li><a href="#" id="">Doctors</a></li>
+            <li><a href="#" id="">Nutrition</a></li>
+            <li><a href="#" id="">Health Blog
+              </a></li>
+          </ul>
+        </div>
+        <div class="fot-1">
+          <ul>
+            <li> <a href="#" id="">Blog</a></li>
+            <li><a href="#" id="">FAQs</a></li>
+            <li><a href="#" id="">Contact us</a></li>
+            <li><a href="#" id="">Privacy Policy</a></li>
+            <li><a href="#" id="">Terms & Condition
+              </a></li>
+          </ul>
+        </div>
+
+        <!-- From Uiverse.io by Yaya12085 -->
+        <form class="form shadow-sm">
+          <span class="title">Subscribe to our newsletter.</span>
+          <p class="description">Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis
+            tempor incididunt dolore.</p>
+          <div>
+            <input placeholder="Enter your email" type="email" name="email" id="email-address">
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
+      </footer>
+
+
+      <div class="last-footer">
+        <div class="follow-us">
+          <h3 style="color: white;">Follow us</h3>
+          <a href="#"><i class="bi bi-whatsapp"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+        </div>
+
+        <div class="col-md-6 mb-3 mb-md-0">
+          <p class="mb-0">© 2025 Exit Health. Empowering your wellness journey.</p>
+        </div>
+
+      </div>
+
+
+
+      <!-- Bootstrap JS Bundle (includes Popper) -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

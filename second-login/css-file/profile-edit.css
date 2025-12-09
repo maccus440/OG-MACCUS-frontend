@@ -1,0 +1,612 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+     background-color: #223a8ade;
+    z-index: 99;
+    padding: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    color: #fff;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+nav img{
+    width: 60px;
+    margin-left: 3em;
+    color: white;
+}
+
+.personal {
+    width: 60%;
+    margin: auto;
+    border: 2px solid rgb(212, 208, 208);
+    border-radius: 10px;
+}
+
+.personal-1 {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    margin: auto;
+    text-align: start;
+    padding: 1.5em 0;
+    border-bottom: 1px solid rgba(194, 192, 192, 0.603);
+    /* box-shadow: 5px 10px 5px rgb(243, 242, 242); */
+}
+
+.all ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+} 
+.all ul li:nth-child(1){
+    background-color: #223a8a;
+    color: rgb(0, 0, 0);
+} 
+.all ul li{
+    list-style: none;
+    padding: 10px 20px;
+} 
+.all ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+} 
+
+.personal-1 span {
+    font-size: 20px;
+    color: #2d54d3;
+    font-weight: 600;
+}
+
+.personal-2 {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    width: 95%;
+    margin: auto;
+    padding: 15px 0;
+}
+
+.personal-2 img {
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.personal-2 button {
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(165, 161, 161);
+}
+
+form {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+    gap: 3em;
+}
+
+form input {
+    padding: 15px 20px;
+    flex: 1;
+    width: 400px;
+    outline: none;
+    border: 1px solid rgb(204, 201, 201);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+.password {
+    width: 60%;
+    margin: auto;
+    border: 2px solid rgb(212, 208, 208);
+    margin-top: 2em;
+    border-radius: 10px;
+}
+
+.password-1 {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    margin: auto;
+    text-align: start;
+    padding: 1.5em 0;
+    border-bottom: 1px solid rgba(194, 192, 192, 0.603);
+    /* box-shadow: 5px 10px 5px rgb(243, 242, 242); */
+}
+
+
+
+.password form {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+    gap: 3em;
+}
+
+.password form input {
+    padding: 15px 20px;
+    flex: 1;
+    width: 260px;
+    outline: none;
+    border: 1px solid rgb(204, 201, 201);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.password label {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+span{
+    color: #2d54d3;
+}
+
+
+
+
+
+
+.zone {
+    width: 60%;
+    margin: auto;
+    border: 2px solid rgb(212, 208, 208);
+    margin-top: 2em;
+    border-radius: 10px;
+}
+
+.zone-1 {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    margin: auto;
+    text-align: start;
+    padding: 1.5em 0;
+    border-bottom: 1px solid rgba(194, 192, 192, 0.603);
+    /* box-shadow: 5px 10px 5px rgb(243, 242, 242); */
+}
+
+
+
+.zone form {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+    gap: 3em;
+}
+
+.zone form select {
+    padding: 15px 20px;
+    flex: 1;
+    width: 250px;
+    outline: none;
+    border: 1px solid rgb(204, 201, 201);
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.zone label {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-google{
+    width: 60%;
+    display: flex;
+    margin: 1.5em 0;
+    border-radius: 10px;
+    gap: 10px;
+}
+.main-google-2{
+    flex: 1;
+     border: 2px solid rgb(212, 208, 208);
+     border-radius: 5px;
+}
+
+.goo{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    margin: auto;
+    text-align: start;
+    padding: 1.5em 0;
+    border-bottom: 1px solid rgba(194, 192, 192, 0.603);
+    /* box-shadow: 5px 10px 5px rgb(243, 242, 242); */
+}
+
+.google section{
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+.google section i{
+    font-size: 30px;
+    max-width: 5px;
+    margin-left: 5px;
+    margin-top: -5px;
+}
+.google section button{
+   font-size: 15px;
+   border: none;
+   background-color: #223a8a;
+   padding: 10px 15px;
+   position: relative;
+   border-radius: 5px;
+   color: white;
+   left: 4em;
+}
+
+.google-con{
+    position: relative;
+    margin-left: 2em;
+}
+
+.buton{
+    position: relative;
+    left: 7em;
+    align-items: end;
+}
+
+@media (max-width: 360px) {
+nav{
+    width: 100%;
+}
+  .personal {
+    width: 100%;
+    margin: auto;
+    border: 2px solid rgb(212, 208, 208);
+    border-radius: 10px;
+}  
+.personal-1 {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    margin: auto;
+    text-align: start;
+    padding: 1.5em 0;
+    border-bottom: 1px solid rgba(194, 192, 192, 0.603);
+    /* box-shadow: 5px 10px 5px rgb(243, 242, 242); */
+}
+.personal-2 {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    width: 100%;
+    margin: auto;
+    padding: 15px 0;
+}
+.email-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    gap: 3em;
+}
+.email-form input {
+    padding: 15px 15px;
+    flex: 1;
+    width: 250px;
+    outline: none;
+    border: 1px solid rgb(204, 201, 201);
+    border-radius: 5px;
+}
+form label {
+    display: flex;
+    flex-direction: column;
+}
+.password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    gap: 3em;
+}
+.password-emm input {
+     
+    width: 250px;
+    outline: none;
+    border: 1px solid rgb(204, 201, 201);
+    border-radius: 5px;
+}
+.zone {
+    width: 100%;
+    margin: auto;
+    border: 2px solid rgb(212, 208, 208);
+    margin-top: 2em;
+    border-radius: 10px;
+}
+.main-google{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0;
+    border-radius: 10px;
+    gap: 10px;
+}
+.google section button{
+   font-size: 15px;
+   border: none;
+   background-color: #223a8a;
+   padding: 10px 10px;
+   position: relative;
+   border-radius: 5px;
+   color: white;
+  left: 6em;
+}
+
+.google-con{
+    width: 100px;
+}
+}
+
+
+
+
+
+@media (max-width: 440px) {
+nav{
+    width: 100%;
+}
+  .personal {
+    width: 100%;
+    margin: auto;
+    border: 2px solid rgb(212, 208, 208);
+    border-radius: 10px;
+}  
+.personal-1 {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    margin: auto;
+    text-align: start;
+    padding: 1.5em 0;
+    border-bottom: 1px solid rgba(194, 192, 192, 0.603);
+    /* box-shadow: 5px 10px 5px rgb(243, 242, 242); */
+}
+.personal-2 {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    width: 100%;
+    margin: auto;
+    padding: 15px 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    gap: 3em;
+}
+form input {
+    padding: 15px 15px;
+    flex: 1;
+    width: 400px;
+    outline: none;
+    border: 1px solid rgb(204, 201, 201);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+form label {
+    display: flex;
+    flex-direction: column;
+}
+
+.password {
+    width: 100%;
+    margin: auto;
+    border: 2px solid rgb(212, 208, 208);
+    margin-top: 2em;
+    border-radius: 10px;
+}
+.zone {
+    width: 100%;
+    margin: auto;
+    border: 2px solid rgb(212, 208, 208);
+    margin-top: 2em;
+    border-radius: 10px;
+}
+
+.zone form select {
+    padding: 15px 20px;
+    flex: 1;
+    width: 400px;
+    outline: none;
+    border: 1px solid rgb(204, 201, 201);
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.password form input {
+    padding: 15px 20px;
+    flex: 1;
+    width: 400px;
+    outline: none;
+    border: 1px solid rgb(204, 201, 201);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.main-google{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0;
+    border-radius: 10px;
+    gap: 10px;
+}
+.google section button{
+   font-size: 10px;
+   justify-content: space-between;
+   border: none;
+   background-color: #223a8a;
+   padding: 10px 10px;
+   position: relative;
+   border-radius: 5px;
+   color: white;
+}
+.buton{
+    position: relative;
+    left: 100px;
+}
+.google-con{
+    width: 100px;
+}
+}
+
+
+
+@media (max-width: 576px) {
+nav{
+    width: 100%;
+    overflow: hidden;
+}
+  .personal {
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    border: 2px solid rgb(212, 208, 208);
+    border-radius: 10px;
+}  
+.personal-1 {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    margin: auto;
+    text-align: start;
+    padding: 1.5em 0;
+    border-bottom: 1px solid rgba(194, 192, 192, 0.603);
+    /* box-shadow: 5px 10px 5px rgb(243, 242, 242); */
+}
+.personal-2 {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    width: 100%;
+    margin: auto;
+    padding: 15px 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    gap: 3em;
+}
+form input {
+    padding: 15px 15px;
+    flex: 1;
+    width: 400px;
+    outline: none;
+    border: 1px solid rgb(204, 201, 201);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+form label {
+    display: flex;
+    flex-direction: column;
+}
+
+.password {
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    border: 2px solid rgb(212, 208, 208);
+    margin-top: 2em;
+    border-radius: 10px;
+}
+.zone {
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    border: 2px solid rgb(212, 208, 208);
+    margin-top: 2em;
+    border-radius: 10px;
+}
+
+.zone form select {
+    padding: 15px 20px;
+    flex: 1;
+    width: 400px;
+    outline: none;
+    border: 1px solid rgb(204, 201, 201);
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.password form input {
+    padding: 15px 20px;
+    flex: 1;
+    width: 400px;
+    outline: none;
+    border: 1px solid rgb(204, 201, 201);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.main-google{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0;
+    border-radius: 10px;
+    gap: 10px;
+}
+.google section button{
+   font-size: 10px;
+   border: none;
+   background-color: #223a8a;
+   padding: 10px 10px;
+   position: relative;
+   border-radius: 5px;
+   color: white;
+   left: 100px;
+}
+.buton{
+    position: relative;
+    left: 100px;
+}
+.google-con{
+    width: 100px;
+}
+}

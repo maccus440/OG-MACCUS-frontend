@@ -1,0 +1,617 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: aliceblue;
+  opacity: 0;
+}
+
+
+.navbar {
+  background-color: #5aaef7;
+  /* position: fixed; */
+  z-index: 1;
+  padding: 2rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  color: #fff;
+  z-index: 2;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #20c997 !important;
+  /* Teal-green: modern & health-friendly */
+}
+
+#mainNavbar {
+  margin-left: 8rem;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0.6rem 1rem;
+  color: #e6e2e2;
+  margin-left: 1rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: blue !important;
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f8f5;
+  color: #20c997;
+}
+
+.btn-outline-primary {
+  border-color: #ffffff;
+  padding: 0.56rem 2rem;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #000000;
+  border-color: #20c997;
+  padding: 0.56rem 2rem;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  box-shadow: inset 242px 0 0 white;
+  transition: 3s;
+  color: #000000;
+}
+
+/* hero section */
+.hero {
+  position: relative;
+  background-image: url(/assets/img/StockCake-health_worker_Images_and_Photos_1761836250.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  overflow: hidden;
+   opacity: 0;
+  animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.hero-1 {
+  position: relative;
+  color: #fff;
+  transform: translate(20%, 50%);
+  width: 35%;
+   animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.my-patient {
+  color: #fff;
+   animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
+
+.hero-2 {
+  gap: 1rem;
+  display: flex;
+}
+
+.hero-2 h2 {
+  color: #000000;
+   animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
+
+.hero h1 {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+   animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.hero h2 {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-size: 30px;
+  font-style: normal;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+   animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.my-patient {
+  text-transform: uppercase;
+  line-height: 3rem;
+  font-size: 2.5rem;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+
+
+/* first card section */
+#my-consult {
+  margin-top: 6rem;
+  width: 50%;
+  justify-content: space-between;
+  animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+}
+
+#my-consul a {
+  text-decoration: none;
+   animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  outline: none;
+}
+
+#my-consult #div {
+  margin: 1rem;
+  box-shadow: 5px 5px 5px gray;
+  border-radius: 3rem;
+  transition: 0.7s;
+   animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+#my-consult #div:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.fa-business-time {
+  border-radius: 2rem;
+}
+
+/* working days */
+.container-days {
+  display: flex;
+  width: 80%;
+  margin-top: 5rem;
+  border-radius: 3rem;
+  height: 85vh;
+  /* overflow: hidden; */
+  background-color: hsl(0, 4%, 99%);
+  animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+
+}
+
+.open-hours-card {
+  background-color: #2997e6;
+  position: absolute;
+  top: -6rem;
+  left: 17rem;
+  color: white;
+  width: 55%;
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+}
+
+.img-fluid {
+  width: 500px;
+  height: 50vh;
+  object-fit: cover;
+  animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+}
+
+.open-hours-card h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+   animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.open-hours-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+   animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.open-hours-card li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+   animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.open-hours-card li:last-child {
+  border-bottom: none;
+}
+
+.cross-icon {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  color: #2997e6;
+  background: rgb(223, 217, 217);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#about {
+  position: relative;
+  top: -7rem;
+  animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+}
+
+.about-us-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a3c7a;
+}
+
+/* Read more button */
+/* From Uiverse.io by cssbuttons-io */
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+  color: #fff;
+}
+
+
+.section-title {
+  font-size: 0.85rem;
+  color: #f59a23;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* .workers section */
+.teams{
+  margin-top: 10rem;
+}
+.who-we-are{
+  margin-left: 6.5rem;
+  margin-bottom: 3rem;
+}
+.who-we-are h4{
+  color: #f59a23;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.who-we-are h2{
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-style: normal;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-bottom: 1rem;
+}
+.who-we-are p{
+  text-align: start;
+  line-height: 1.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 35rem;
+  font-size: 1rem;
+}
+.workers {
+  display: flex;
+}
+
+.card {
+  width: 320px;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.card img {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  margin-bottom: 1rem;
+  width: 320px;
+  height: 300px;
+  transition: transform 0.4s ease-out;
+  object-fit: cover;
+  display: block;
+}
+.card img:hover{
+  transform: scalE(98%);
+}
+
+.card h5 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #2997e6;
+}
+
+.card h5:hover {
+  color: hsl(206, 70%, 74%);
+}
+.card-icon{
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card i{
+  margin-left: 1rem;
+  color: #2997e6;
+}
+
+/* why choose us section */
+.choose{
+  position: relative;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+width: 75%;
+}
+
+.left{
+  width: 70%;
+}
+.choose img{
+  width: 40%;
+  height: 70vh;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.choose .right{
+  position: relative;
+  margin-top: 8rem;
+
+  text-align: start;
+  line-height: 3rem;
+  flex-direction: column;
+}
+.choose .right h4{
+  color: #2997e6;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.choose .right h1{
+  text-transform: uppercase;
+}
+
+.choose .right ul{
+  text-align: start;
+}
+
+.choose .right ul li{
+  text-align: start;
+   justify-content: space-between;
+   position: relative;
+   color: #e6e2e2;
+  outline: none;
+  right: 1.5rem;
+  list-style: none;
+}
+.right i{
+  background-color: #2997e6;
+  color: #fff;
+}
+
+.right span{
+  margin-left: 2rem;
+  color: black;
+}
+
+.right a{
+  background-color: #0c8ae4;
+  color: white;
+  font-size: 20px;
+}
+
+.right a{
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+.right a:hover{
+  text-decoration: underline;
+}
+
+
+
+/* animation section */
+.awards {
+  margin: 100px auto;
+      width: 99%;
+      display: flex;
+      overflow-x: auto;
+      gap: 1em;
+}
+.awards::-webkit-scrollbar{
+      display: none;
+    }
+.awards-2{
+  display: flex;
+}
+.awards-2 img{
+  width: 300px;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      animation: spin 5s infinite linear;
+      padding-right: 1em;
+}
+.awards:hover .awards-2 img {
+  animation-play-state: paused;
+}
+
+ @keyframes spin {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+@media (max-width: 400px) {
+  .choose{
+    flex-direction: column;
+  }
+}
+
+
+
+
+/* @keyframes appear {
+    from {
+        opacity: 0;
+        clip-path: inset(100% 100% 0 0);
+    }
+    to{
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+} */
+
+@keyframes appear {
+        from {
+          opacity: 0;
+          clip-path: inset(100% 100% 0 0);
+        }
+        to {
+          opacity: 1;
+          clip-path: inset(0 0 0 0);
+        }
+      }
+
+      .awards {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
