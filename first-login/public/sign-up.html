@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css-file/about-us.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="/first-login/css-file/sign-up.css">
+</head>
+
+<body>
+     <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+
+
+    <form id="loginform" action="">
+        <h1>Login</h1>
+        <div class="input-section">
+            <div class="inputform-1">
+                <span>@</span>
+                <input id="Username" type="text" class="input-field" placeholder="Username" autocomplete="off" required>
+            </div>
+
+            <div class="inputform-2">
+                <i class="fa-solid fa-lock"></i>
+                <input id="Password" type="password" class="input-field-2" placeholder="Password" autocomplete="off"
+                    required>
+            </div>
+            <div id="message">
+
+                </div>
+
+            <div class="flex-row">
+                <div>
+                    <input type="radio" />
+                    <label class="rember">Remember me </label>
+                </div>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="button-submit">Sign In</button>
+            <p class="signed">
+                Don't have an account? <a href="../public/register.html">Sign Up</a>
+            </p>
+            <p class="Or">Or With</p>
+        </div>
+        <div class="google">
+            <button>
+                <i class="fa-brands fa-google"></i> Google
+            </button>
+
+            <div class="google">
+                <button>
+                    <i class="fa-brands fa-apple"></i> Apple
+                </button>
+
+            </div>
+    </form>
+
+
+    <script src="/first-login/js/sign-up.js"></script>
+</body>
+
+</html>
